@@ -1,0 +1,344 @@
+{
+  "algo_nr": 4,
+  "n_jobs": 6,
+  "force_train": "False",
+  "classification": 1,
+  "hdf5_tmp_path": "/scratch365/akuehlka/mcnns_tmp",
+
+  "dataset_nr": 7,
+  "dataset_path": "dataset/livdet2017nd/images",
+  "ground_truth_path": "dataset/livdet2017nd",
+  "iris_location": "dataset/livdet2017nd/osiris/osiris_coords.csv",
+  "output_path": "output",
+  "operation": "segment",
+  "max_axis": 260,
+  "max_classifiers_subset": 1,
+
+  "pre-classifiers": {
+    "global_params": {
+      "dataset_nr": 7,
+      "dataset_path": "dataset/livdet2017nd/images",
+      "ground_truth_path": "dataset/livdet2017nd",
+      "iris_location": "dataset/livdet2017nd/osiris/osiris_coords.csv",
+      "output_path": "output",
+      "operation": "segment",
+      "max_axis": 260,
+      "algo_nr": 0,
+      "epochs": 70,
+      "bs": 32,
+      "loss_function": 2,
+      "lr": 0.001,
+      "decay": 0.0,
+      "optimizer": 1,
+      "reg": 0.1,
+      "fold": 0
+    },
+    "classifier_list": [
+      {
+        "descriptor": "RawImage",
+        "desc_params": "",
+        "feature_extraction": 0
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[3,3,5]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[3,3,6]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[3,3,7]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[3,3,8]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[5,5,5]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[5,5,6]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[5,5,7]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[5,5,8]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[5,5,9]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[5,5,10]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[5,5,11]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[5,5,12]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[7,7,5]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[7,7,6]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[7,7,7]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[7,7,8]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[7,7,9]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[7,7,10]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[7,7,11]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[7,7,12]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[9,9,5]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[9,9,6]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[9,9,7]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[9,9,8]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[9,9,9]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[9,9,10]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[9,9,11]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[9,9,12]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[11,11,5]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[11,11,6]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[11,11,7]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[11,11,8]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[11,11,9]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[11,11,10]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[11,11,11]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[11,11,12]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[13,13,5]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[13,13,6]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[13,13,7]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[13,13,8]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[13,13,9]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[13,13,10]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[13,13,11]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[13,13,12]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[15,15,5]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[15,15,6]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[15,15,7]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[15,15,8]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[15,15,9]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[15,15,10]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[15,15,11]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[15,15,12]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[17,17,5]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[17,17,6]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[17,17,7]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[17,17,8]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[17,17,9]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[17,17,10]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[17,17,11]",
+        "feature_extraction": 1
+      },
+      {
+        "descriptor": "bsif",
+        "desc_params": "[17,17,12]",
+        "feature_extraction": 1
+      }
+    ]
+  }
+}
