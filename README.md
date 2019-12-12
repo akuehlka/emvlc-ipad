@@ -53,3 +53,6 @@ python antispoofing/mcnns/scripts/mcnnsantispoofing_fusion.py \
     --augmentation 0 \
     --weighttype acc \
     --device_number ${CUDA_VISIBLE_DEVICES}
+
+## Trained Networks
+The trained networks used are available for download [here](https://notredame.box.com/s/0slfabaqglqinpovi6b0dwavc35uf99e)
